@@ -1,23 +1,14 @@
-// creating a new deck
+// // multiple return values
 package main
 
 func main() {
 	cards := newDeck()
 
-	cards.print()
+	hand, remainingCards := deal(cards, 5)
+
+	hand.print()
+	remainingCards.print()
 }
-
-// // multiple return values
-// package main
-
-// func main() {
-// 	cards := newDeck()
-
-// 	hand, remainingCards := deal(cards, 5)
-
-// 	hand.print()
-// 	remainingCards.print()
-// }
 
 // // byte slices, deck to string, joining a slice of strings
 // package main
