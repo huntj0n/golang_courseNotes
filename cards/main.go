@@ -1,24 +1,12 @@
-// // multiple return values
+// // byte slices, deck to string, joining a slice of strings
 package main
+
+import "fmt"
 
 func main() {
 	cards := newDeck()
-
-	hand, remainingCards := deal(cards, 5)
-
-	hand.print()
-	remainingCards.print()
+	fmt.Println(cards.toString())
 }
-
-// // byte slices, deck to string, joining a slice of strings
-// package main
-
-// import "fmt"
-
-// func main() {
-// 	cards := newDeck()
-// 	fmt.Println(cards.toString())
-// }
 
 // // savinng data to the hard drive (run file in terminal before pushing)
 // // reading from the hard drive
